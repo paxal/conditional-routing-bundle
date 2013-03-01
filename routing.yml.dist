@@ -1,0 +1,4 @@
+ExampleConditionalRoutingBundle:
+    resource: .
+    type: extra    
+
