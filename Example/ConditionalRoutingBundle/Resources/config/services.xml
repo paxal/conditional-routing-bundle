@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <!-- Our new loader -->
+        <service id="example.conditional_routing.routing_loader" class="Example\ConditionalRoutingBundle\Routing\Loader">
+            <!-- Retrieve yml loader service -->
+            <argument type="service" id="routing.loader.yml" />
+            <!-- Retrieve our parameters -->
+            <argument>%example.conditional_routing.has_feature_1%</argument>
+            <argument>%example.conditional_routing.has_feature_2%</argument>
+            <!-- Declare our routes loader -->
+            <tag name="routing.loader"></tag>
+        </service>
+    </services>
+
+</container>

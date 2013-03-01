@@ -1,0 +1,5 @@
+# Include routing for second controller
+ExampleConditionalRoutingBundle:
+    resource: "@ExampleConditionalRoutingBundle/Controller/SecondController.php"
+    type:     annotation
+    prefix:   /

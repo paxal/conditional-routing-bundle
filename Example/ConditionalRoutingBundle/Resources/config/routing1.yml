@@ -1,0 +1,5 @@
+# Include routing for first controller
+ExampleConditionalRoutingBundle:
+    resource: "@ExampleConditionalRoutingBundle/Controller/FirstController.php"
+    type:     annotation
+    prefix:   /
