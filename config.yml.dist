@@ -1,0 +1,3 @@
+example_conditional_routing:
+    has_feature_1: true
+    has_feature_2: false
